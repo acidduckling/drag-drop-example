@@ -1,6 +1,4 @@
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { SortableComponent } from '@progress/kendo-angular-sortable';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,17 +8,4 @@ import { SortableComponent } from '@progress/kendo-angular-sortable';
 })
 export class AppComponent {
 
-  @ViewChild(SortableComponent) sortable: SortableComponent;
-  itemsA = [];
-
-  itemsB = [];
-
-  counter = 0;
-
-  newItem() {
-    const newItem = {
-      name: `Item ${this.counter++}`
-    };
-    this.sortable.addDataItem(newItem, this.itemsA.length);
-  }
 }
