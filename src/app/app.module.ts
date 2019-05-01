@@ -4,6 +4,8 @@ import { SortableModule } from '@progress/kendo-angular-sortable';
 import { AppComponent } from './app.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { KendosortComponent } from './kendosort/kendosort.component';
+import { NgDragDropModule } from 'ng-drag-drop';
+import { DragItemComponent } from './drag-drop/drag-item/drag-item.component';
 
 
 
@@ -12,10 +14,11 @@ import { KendosortComponent } from './kendosort/kendosort.component';
   declarations: [
     AppComponent,
     KendosortComponent,
-    DragDropComponent
+    DragDropComponent,
+    DragItemComponent
   ],
   imports: [
-    BrowserModule, SortableModule
+    BrowserModule, SortableModule, NgDragDropModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

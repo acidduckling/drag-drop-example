@@ -1,3 +1,13 @@
-<p>
-  drag-drop works!
-</p>
+<div class="row">
+  <div class="col-6">
+    <div class="drag-wrapper">
+      <app-drag-item *ngFor="let item of itemsA; let i = index" [item]="item" [index]="i" (moved)="move($event, i, itemsA)"></app-drag-item>
+    </div>
+  </div>
+
+  <div class="col-6" droppable (onDrop)="receiveItem($event, itemsA, itemsB)">
+    <div class="drag-wrapper">
+      <app-drag-item *ngFor="let item of itemsB; let i = index" [item]="item" [index]="i"  (moved)="move($event, i, itemsB)"></app-drag-item>
+    </div>
+  </div>
+</div>

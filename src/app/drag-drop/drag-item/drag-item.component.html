@@ -1,0 +1,5 @@
+<div draggable [dragData]="item">
+  {{item.name}} | {{index}}
+  <button class="btn btn-secondary" (click)="move('up', item, i)">Up</button>
+  <button class="btn btn-secondary" (click)="move('down', item, i)">Down</button>
+</div>
