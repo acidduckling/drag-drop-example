@@ -4,11 +4,13 @@ import { SortableModule } from '@progress/kendo-angular-sortable';
 
 
 import { AppComponent } from './app.component';
+import { KendosortComponent } from './kendosort/kendosort.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    KendosortComponent
   ],
   imports: [
     BrowserModule, SortableModule
