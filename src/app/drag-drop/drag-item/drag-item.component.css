@@ -1,0 +1,14 @@
+.item {
+    display: block;
+    min-height: 3rem;
+    line-height: 3rem;
+    background-color: blue;
+    border-bottom: solid 1px #aaa;
+    padding: 0.5rem;
+    opacity: 1;
+}
+
+.item:hover {
+    
+    color: #fff;
+}

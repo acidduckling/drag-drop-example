@@ -19,7 +19,6 @@ export interface MoveEvent {
   styleUrls: ['./drag-item.component.css']
 })
 export class DragItemComponent implements OnInit {
-  @HostBinding('class.item') hostClass = true;
 
   @Input() item: Item;
   @Input() index: number;
